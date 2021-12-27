@@ -1,4 +1,4 @@
-package com.eric.javademo.log4jTest;
+package com.eric.javaDemo.log4jTest;
 
 /**
  * <pre>

